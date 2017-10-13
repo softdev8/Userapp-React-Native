@@ -27,6 +27,7 @@ const AppNavigatorWithState = connect(mapStateToProps)(AppNavigator)
 
 class Root extends React.Component {
     render() {
+        alert("sdjflskdjflsd")
         return (
             <Provider store={store}>
                 <AppNavigatorWithState />

@@ -3,7 +3,7 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
+/*
 import React, { Component } from 'react';
 import {
   Platform,
@@ -55,3 +55,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+*/
+
+import App from './src/modules/screen'
+export default App

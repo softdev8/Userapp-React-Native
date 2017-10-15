@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-class LoginScreen extends React.Component {
+export default class LoginScreen extends React.Component {
 
     render() {
         return (

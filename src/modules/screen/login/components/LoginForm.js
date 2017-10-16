@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { View } from 'react-native'
 import { TextInputForm } from '@views'
 import StyleSheet from 'react-native-extended-stylesheet'
@@ -28,7 +29,7 @@ class LoginForm extends React.Component {
         return (
             <View style={[styles.container, style]}>
                 <TextInputForm
-                    placeholder={"EMAIL/NOMOR TELEPON"}
+                    placeholder={"EMAIL/USER NAME"}
                     onChangeText={(text) => {
                         const newState = { username: text }
                         this.updateData(newState)
@@ -37,7 +38,7 @@ class LoginForm extends React.Component {
                 <TextInputForm
                     isPassword={true}
                     style={styles.inputForm}
-                    placeholder={"KATA SANDI"}
+                    placeholder={"PASSWORD"}
                     onChangeText={(text) => {
                         const newState = { password: text }
                         this.updateData(newState)

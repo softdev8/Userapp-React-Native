@@ -50,7 +50,7 @@ class LoginScreen extends React.Component {
                 <StatusBar />
                 <LoginToolbar />
                 <FacebookButton
-                    text={"Login dengan Facebook"}
+                    text={"Login with Facebook"}
                     style={styles.facebookButton}
                     action={loginWithFacebook}
                 />
@@ -62,7 +62,7 @@ class LoginScreen extends React.Component {
                 <TouchableOpacity
                     style={{ alignItems: 'flex-end', paddingRight: 20 }}
                     onPress={navigateToForgotPassword}>
-                    <Text style={styles.forgotPassword}>Lupa kata sandi?</Text>
+                    <Text style={styles.forgotPassword}>Forgot Password</Text>
                 </TouchableOpacity>
                 <View style={{ justifyContent: 'flex-end', flex: 1 }}>
                     <TouchableOpacity
@@ -79,7 +79,7 @@ class LoginScreen extends React.Component {
                     </TouchableOpacity>
                     <TouchableOpacity style={bottomStyle.bottomContainer}>
                         <Text style={[bottomStyle.transparent, bottomStyle.textAccount]}>
-                            Tidak Memiliki Akun?
+                            Don't have an account?
                          </Text>
                         <Text style={[bottomStyle.transparent, bottomStyle.textSignUp]}>
                             Sign Up

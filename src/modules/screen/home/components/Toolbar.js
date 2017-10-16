@@ -20,7 +20,7 @@ class Toolbar extends React.Component {
                     imageStyle={styles.iconMenu}
                 />
                 <Text style={styles.text}>
-                    Selamat Datang, {user}!
+                    Welcome to, {user}!
                 </Text>
             </View>
         )

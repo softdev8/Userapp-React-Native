@@ -16,6 +16,8 @@ import {
 
 import { login, loginWithFacebook } from '../../services/auth/AuthService'
 
+var { FBLogin, FBLoginManager } = require('react-native-facebook-login'); 
+
 const height = Dimensions.get('window').height
 
 class LoginScreen extends React.Component {
@@ -40,6 +42,8 @@ class LoginScreen extends React.Component {
 
         const navigateToForgotPassword = () => navigation.dispatch({ type: Screens.FORGOT_PASSWORD })
 
+        var _this = this
+
         return (
             <View style={styles.bg}>
                 <LoadingOverlay visible={isLoading} />
@@ -49,11 +53,14 @@ class LoginScreen extends React.Component {
                 />
                 <StatusBar />
                 <LoginToolbar />
-                <FacebookButton
+                
+                {/* <FacebookButton
                     text={"Login with Facebook"}
                     style={styles.facebookButton}
                     action={loginWithFacebook}
-                />
+                /> */}
+                <FBLogin style={{ marginBottom: 10, }} />
+
                 <Text style={styles.or}>OR</Text>
                 <LoginForm
                     style={styles.loginForm}

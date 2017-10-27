@@ -1,8 +1,6 @@
 # Userapp-React-Native
-
-This is guideline for build and run user app from scratch
 ----------------------------------------------
-delivery app development
+This is guideline for build and run user app from scratch( mobile delivery app)
 
 -- pre requirements:
 https://github.com/MobileDev418/Userapp-React-Native.git

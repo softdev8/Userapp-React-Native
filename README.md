@@ -19,7 +19,7 @@ After running the Simulator or connect the Device
 $ react-native run-android
 or
 $ react-native run-ios
-
+```
 
 ### License
 mobile developer

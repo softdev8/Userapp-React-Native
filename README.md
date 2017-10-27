@@ -22,4 +22,4 @@ $ react-native run-ios
 ```
 
 ### License
-mobile developer
+oncemore

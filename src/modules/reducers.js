@@ -4,7 +4,7 @@ import authReducer from './services/auth/AuthService'
 import rate from './services/checkrates/checkratesService'
 import modal from './services/modal'
 import forgotPassword from './services/forgotpassword/ForgotPasswordService'
-// import places from './services/searchplaces/GooglePlacesSearchService'
+import places from './services/searchplaces/GooglePlacesSearchService'
 
 import { combineReducers } from 'redux'
 
@@ -15,5 +15,5 @@ export default combineReducers({
     rate,   
     modal,
     forgotPassword,
-    // places,
+    places,
 })

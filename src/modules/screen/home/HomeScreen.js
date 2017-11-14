@@ -29,7 +29,7 @@ class HomeScreen extends React.Component {
                         <HomeButonn
                             action={navCheckRates}
                             icon={icons.homeRates}
-                            text={"Cek Harga"}
+                            text={"Check Rate"}
                             style={styles.checkRates}
                         />
                         <HomeButonn

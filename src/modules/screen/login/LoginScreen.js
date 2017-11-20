@@ -60,7 +60,10 @@ class LoginScreen extends React.Component {
                     action={loginWithFacebook}
                 />
                 <FBLogin style={{ marginBottom: 10, }} />
-
+                
+                <View>
+		    <Text Sign in with Facebook/>
+		</View>
                 <Text style={styles.or}>OR</Text>
                 <LoginForm
                     style={styles.loginForm}

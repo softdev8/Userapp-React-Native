@@ -62,7 +62,16 @@ class LoginScreen extends React.Component {
                 <FBLogin style={{ marginBottom: 10, }} />
                 
                 <View>
-		    <Text Sign in with Facebook/>
+                <UniButton action={this._loginWithFacebook} borderless={true} borderRadius={4}>
+                    <View style={[s.flx_row, s.aic, s.bg_blue, { width: rw(90), height: 50, borderRadius: 4 }]}>
+                        <View style={[s.jcc, s.aic, { height: 50, width: 80 }]}>
+                            <FontAwesome name="facebook-square" size={28} color="#fff"/>
+                        </View>
+                        <UniText.Regular family="roboto" size={rf(2.3)} color="#fff">
+                            Sign in with Facebook
+                        </UniText.Regular>
+                    </View>
+                </UniButton>
 		</View>
                 <Text style={styles.or}>OR</Text>
                 <LoginForm

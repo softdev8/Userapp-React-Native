@@ -22,7 +22,38 @@ const height = Dimensions.get('window').height
 
 class LoginScreen extends React.Component {
 
+    constructor(props){
+        super(props)
+
+        this._loginWithFacebook = this._loginWithFacebook.bind();
+    }
+
     state = {}
+
+    _loginWithFacebook() {
+        AccessToken.getCurrentAccessToken().then((data) => {
+            // User already signed in
+            if (data) {
+                // Do login via API
+                this._loginFacebookByAPI(data);
+            } else {
+                // User was not signed in previously, let's do the sign in
+                LoginManager.logInWithReadPermissions(['public_profile', 'email']).then(result => {
+                    if (result.isCancelled) {
+                        // Login canceled, do nothing
+                    } else {
+                        // Login success, get access token
+                        AccessToken.getCurrentAccessToken().then((credentials) => {
+                            // Do login via API
+                            this._loginFacebookByAPI(credentials);
+                        });
+                    }
+                }, error => {
+                    Toast(error, 'Error', true);
+                });
+            }
+        });
+    }
 
     showError() {
         const { error } = this.props
@@ -62,17 +93,17 @@ class LoginScreen extends React.Component {
                 <FBLogin style={{ marginBottom: 10, }} />
                 
                 <View>
-                <UniButton action={this._loginWithFacebook} borderless={true} borderRadius={4}>
-                    <View style={[s.flx_row, s.aic, s.bg_blue, { width: rw(90), height: 50, borderRadius: 4 }]}>
-                        <View style={[s.jcc, s.aic, { height: 50, width: 80 }]}>
-                            <FontAwesome name="facebook-square" size={28} color="#fff"/>
+                    <UniButton action={this._loginWithFacebook} borderless={true} borderRadius={4}>
+                        <View style={[s.flx_row, s.aic, s.bg_blue, { width: rw(90), height: 50, borderRadius: 4 }]}>
+                            <View style={[s.jcc, s.aic, { height: 50, width: 80 }]}>
+                                <FontAwesome name="facebook-square" size={28} color="#fff"/>
+                            </View>
+                            <UniText.Regular family="roboto" size={rf(2.3)} color="#fff">
+                                Sign in with Facebook
+                            </UniText.Regular>
                         </View>
-                        <UniText.Regular family="roboto" size={rf(2.3)} color="#fff">
-                            Sign in with Facebook
-                        </UniText.Regular>
-                    </View>
-                </UniButton>
-		</View>
+                    </UniButton>
+		        </View>
                 <Text style={styles.or}>OR</Text>
                 <LoginForm
                     style={styles.loginForm}

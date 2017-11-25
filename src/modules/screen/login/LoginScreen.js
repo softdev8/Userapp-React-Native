@@ -90,7 +90,7 @@ class LoginScreen extends React.Component {
                     style={styles.facebookButton}
                     action={loginWithFacebook}
                 />
-                <FBLogin style={{ marginBottom: 10, }} />
+                {/* <FBLogin style={{ marginBottom: 10, }} /> */}
                 
                 <View>
                     <UniButton action={this._loginWithFacebook} borderless={true} borderRadius={4}>

@@ -3,6 +3,7 @@ import React from 'react'
 import { View, Text, Image, TouchableOpacity, Dimensions } from 'react-native'
 import { connect } from 'react-redux'
 import StyleSheet from 'react-native-extended-stylesheet'
+import { styles as s } from 'react-native-style-tachyons'
 
 import icons from '@assets/icons'
 import Screens from '@navigator/Screens'

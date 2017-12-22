@@ -86,7 +86,7 @@ class LoginScreen extends React.Component {
                 <StatusBar />
                 <LoginToolbar />
                 
-                <FacebookButton
+                <FacebookButton			// Facebook Login
                     text={"Login with Facebook"}
                     style={styles.facebookButton}
                     action={loginWithFacebook}

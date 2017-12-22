@@ -17,10 +17,8 @@ function getMiddleWares() {
         api: api,
         screens: screens
     })]
-
     if (process.env.NODE_ENV === `development`) {
         middlewares.push(logger);
     }
-
     return applyMiddleware(...middlewares)
 }

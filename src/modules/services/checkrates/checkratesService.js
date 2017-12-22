@@ -17,12 +17,12 @@ export default function reducer(state = initialState, action = {}) {
         case INCREMENT:
             return {
               ...state,
-              count: state.count < 17 ? state.count + 1 : state.count
+              count: state.count < 20 ? state.count + 1 : state.count
             }
         case DECREMENT:
             return {
               ...state,
-              count: state.count > 10 ? state.count - 1 : state.count
+              count: state.count > 0 ? state.count - 1 : state.count
             }
         case FROMADDRESS:
             return {

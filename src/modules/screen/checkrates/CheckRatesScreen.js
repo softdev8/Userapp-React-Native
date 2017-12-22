@@ -12,7 +12,7 @@ import Screens from '../navigator/Screens'
 
 import Icons from '@assets/icons'
 import TopView from './components/TopView'
-import CheckAddressScreen from './CheckAddressScreen'
+// import CheckAddressScreen from './CheckAddressScreen'
 import styles from './CheckRatesScreenStyles'
 import { 
     increment,
@@ -82,10 +82,10 @@ class CheckRatesScreen extends React.Component {
                 <Modal
                     visible={this.state.showModal}
                     onRequestClose={this.toggleModal}>
-                    <View>
+                    {/* <View>
                         <CheckAddressScreen 
                             toggleModal={this.toggleModal} />
-                    </View>
+                    </View> */}
                 </Modal>
             </View>
         )

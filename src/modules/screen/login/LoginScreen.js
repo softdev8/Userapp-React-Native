@@ -3,7 +3,7 @@ import React from 'react'
 import { View, Text, Image, TouchableOpacity, Dimensions } from 'react-native'
 import { connect } from 'react-redux'
 import StyleSheet from 'react-native-extended-stylesheet'
-import { styles as s } from 'react-native-style-tachyons'
+// import { styles as s } from 'react-native-style-tachyons'
 
 import icons from '@assets/icons'
 import Screens from '@navigator/Screens'
@@ -26,35 +26,35 @@ class LoginScreen extends React.Component {
     constructor(props){
         super(props)
 
-        this._loginWithFacebook = this._loginWithFacebook.bind();
+        // this._loginWithFacebook = this._loginWithFacebook.bind();
     }
 
     state = {}
 
-    _loginWithFacebook() {
-        AccessToken.getCurrentAccessToken().then((data) => {
-            // User already signed in
-            if (data) {
-                // Do login via API
-                this._loginFacebookByAPI(data);
-            } else {
-                // User was not signed in previously, let's do the sign in
-                LoginManager.logInWithReadPermissions(['public_profile', 'email']).then(result => {
-                    if (result.isCancelled) {
-                        // Login canceled, do nothing
-                    } else {
-                        // Login success, get access token
-                        AccessToken.getCurrentAccessToken().then((credentials) => {
-                            // Do login via API
-                            this._loginFacebookByAPI(credentials);
-                        });
-                    }
-                }, error => {
-                    Toast(error, 'Error', true);
-                });
-            }
-        });
-    }
+    // _loginWithFacebook() {
+    //     AccessToken.getCurrentAccessToken().then((data) => {
+    //         // User already signed in
+    //         if (data) {
+    //             // Do login via API
+    //             this._loginFacebookByAPI(data);
+    //         } else {
+    //             // User was not signed in previously, let's do the sign in
+    //             LoginManager.logInWithReadPermissions(['public_profile', 'email']).then(result => {
+    //                 if (result.isCancelled) {
+    //                     // Login canceled, do nothing
+    //                 } else {
+    //                     // Login success, get access token
+    //                     AccessToken.getCurrentAccessToken().then((credentials) => {
+    //                         // Do login via API
+    //                         this._loginFacebookByAPI(credentials);
+    //                     });
+    //                 }
+    //             }, error => {
+    //                 Toast(error, 'Error', true);
+    //             });
+    //         }
+    //     });
+    // }
 
     showError() {
         const { error } = this.props
@@ -92,7 +92,7 @@ class LoginScreen extends React.Component {
                     action={loginWithFacebook}
                 />
                                 
-                <View>
+                {/* <View>
                     <UniButton action={this._loginWithFacebook} borderless={true} borderRadius={4}>
                         <View style={[s.flx_row, s.aic, s.bg_blue, { width: rw(90), height: 50, borderRadius: 4 }]}>
                             <View style={[s.jcc, s.aic, { height: 50, width: 80 }]}>
@@ -103,7 +103,7 @@ class LoginScreen extends React.Component {
                             </UniText.Regular>
                         </View>
                     </UniButton>
-		        </View>
+		        </View> */}
                 <Text style={styles.or}>OR</Text>
                 <LoginForm
                     style={styles.loginForm}

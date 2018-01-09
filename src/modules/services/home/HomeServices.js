@@ -68,3 +68,10 @@ export function fetchSummary() {
             .catch(error => dispatch(showError(error)))
     }
 }
+
+export function showModal(dlg) {
+    return {
+        type: SUMMARY_MODAL,
+        summary: dlg,
+    }
+}

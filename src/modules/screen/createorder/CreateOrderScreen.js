@@ -8,5 +8,4 @@ class CreateOrderScreen extends React.Component {
         )
     }
 }
-
 export default CreateOrderScreen

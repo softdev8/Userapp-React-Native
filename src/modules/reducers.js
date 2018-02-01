@@ -16,4 +16,5 @@ export default combineReducers({
     modal,
     forgotPassword,
     places,
+//    home,
 })

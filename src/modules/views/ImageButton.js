@@ -29,5 +29,3 @@ ImageButton.propTypes = {
 }
 
 export default ImageButton
-
-

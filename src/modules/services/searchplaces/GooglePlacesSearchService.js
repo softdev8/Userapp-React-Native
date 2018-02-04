@@ -120,4 +120,3 @@ export function nearbyRequest(latitude, longitude) {
             })
     }
 }
-

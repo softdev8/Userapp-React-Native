@@ -35,4 +35,3 @@ export function removeError() {
         type: Types.REMOVE_ERROR
     }
 }
-

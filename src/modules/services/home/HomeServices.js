@@ -21,18 +21,18 @@ export default function reducer(state = initialState, action = {}) {
                 isLoading: true,
                 isError: false
             }
-        case SUMMARY_FETCHED:
-            return {
-                isLoading: false,
-                isError: false,
-                summary: action.json
-            }
         case SUMMARY_FETCH_ERROR:
             return {
                 ...state,
                 isLoading: false,
                 isError: true
             }
+        case SUMMARY_FETCHED:
+            return {
+                isLoading: false,
+                isError: false,
+                summary: action.json
+            }            
         default:
             return state;
     }

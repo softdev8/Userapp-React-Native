@@ -50,6 +50,13 @@ export function increment() {
     }
 }
 
+export function setSendAddress(address) {
+    return {
+        type: SENDADDRESS,
+        address: address
+    }
+}
+
 export function decrement() {
     return {
         type: DECREMENT
@@ -62,11 +69,3 @@ export function setFromAddress(address) {
         address: address
     }
 }
-
-export function setSendAddress(address) {
-    return {
-        type: SENDADDRESS,
-        address: address
-    }
-}
-

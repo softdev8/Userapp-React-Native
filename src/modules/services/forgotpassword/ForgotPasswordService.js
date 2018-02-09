@@ -34,16 +34,16 @@ export default function reducer(state = initialState, action = {}) {
     }
 }
 
-export function showLoading() {
-    return {
-        type: Types.FORGOT_PASSWORD_REQUEST
-    }
-}
-
 export function showError(error) {
     return {
         type: Types.FORGOT_PASSWORD_COMPLETED,
         error: error
+    }
+}
+
+export function showLoading() {
+    return {
+        type: Types.FORGOT_PASSWORD_REQUEST
     }
 }
 

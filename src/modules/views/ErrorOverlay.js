@@ -30,7 +30,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#00000088'
     },
-    secondContainer: {
+    text: {
+        padding: 10
+    },secondContainer: {
         paddingLeft: 10,
         paddingRight: 10,
         paddingTop: 10,
@@ -40,9 +42,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    text: {
-        padding: 10
-    }
 })
 
 const mapDispatchToProps = dispatch => {

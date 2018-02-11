@@ -22,15 +22,6 @@ const styles = StyleSheet.create({
         width: 24,
         height: 24
     },
-    button: {
-        width: 320,
-        height: 48,
-        borderRadius: 100,
-        backgroundColor: '#3f51b5',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'row'
-    },
     text: {
         marginLeft: 12.5,
         width: 208,
@@ -40,6 +31,15 @@ const styles = StyleSheet.create({
         letterSpacing: 0.44,
         textAlign: "center",
         color: '$white'
+    },
+    button: {
+        width: 320,
+        height: 48,
+        borderRadius: 100,
+        backgroundColor: '#3f51b5',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'row'
     }
 })
 

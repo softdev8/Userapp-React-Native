@@ -64,13 +64,13 @@ const styles = EStyleSheet.create({
         marginRight: 5,
         backgroundColor: '$frog_green'
     },
-    myOrder: {
-        marginLeft: 5,
-        backgroundColor: '$squash'
-    },
     trackingButton: {
         marginLeft: 5,
         backgroundColor: '$dark_sky_blue'
+    },
+    myOrder: {
+        marginLeft: 5,
+        backgroundColor: '$squash'
     },
     promoButton: {
         marginRight: 5

@@ -37,6 +37,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    image: {
+        width: 40,
+        height: 40
+    },
     button: {
         width: 165,
         height: 165,
@@ -49,10 +53,6 @@ const styles = StyleSheet.create({
         lineHeight: 24.0,
         letterSpacing: 0.56,
         color: '$white'
-    },
-    image: {
-        width: 40,
-        height: 40
     },
     arrow: {
         width: 24,

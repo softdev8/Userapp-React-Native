@@ -82,10 +82,10 @@ class CheckRatesScreen extends React.Component {
                 <Modal
                     visible={this.state.showModal}
                     onRequestClose={this.toggleModal}>
-                    {/* <View>
-                        <CheckAddressScreen 
-                            toggleModal={this.toggleModal} />
-                    </View> */}
+//                     <View>
+//                         <CheckAddressScreen 
+//                             toggleModal={this.toggleModal} />
+//                     </View>
                 </Modal>
             </View>
         )

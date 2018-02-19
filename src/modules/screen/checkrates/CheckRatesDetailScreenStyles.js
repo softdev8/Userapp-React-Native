@@ -37,9 +37,6 @@ export default StyleSheet.create({
         width: 30,
         height: 30
     },
-    currency: {
-        color: '$dark_sky_blue'
-    },
     rateSelType: {
         backgroundColor: '$white',
         width: 100,
@@ -58,6 +55,9 @@ export default StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 12,
         opacity: 0.5
+    },
+    currency: {
+        color: '$dark_sky_blue'
     },
     rateView: {
         flexDirection: 'row',

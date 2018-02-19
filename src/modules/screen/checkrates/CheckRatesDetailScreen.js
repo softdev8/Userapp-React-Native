@@ -81,7 +81,12 @@ class CheckRatesDetailScreen extends React.Component {
                     <View style={styles.sendNow}>
                         <Text style={{color: '#fff', fontSize: 16}}>Kirim Barang Sekarang</Text>
                     </View>
-                </TouchableOpacity>
+                 </TouchableOpacity>
+//                <TouchableOpacity>
+//                     <View style={styles.sendNow}>
+//                         <Text style={{color: '#fff', fontSize: 16}}>Kirim Barang Sekarang</Text>
+//                     </View>
+//                 </TouchableOpacity>
             </View>
         )
     }

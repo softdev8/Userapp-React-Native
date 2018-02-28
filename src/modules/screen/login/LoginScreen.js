@@ -143,15 +143,15 @@ class LoginScreen extends React.Component {
 }
 
 const bottomStyle = StyleSheet.create({
-    bottomContainer: {
+    transparent: {
+        backgroundColor: '#00000000'
+    },bottomContainer: {
         height: 48,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'
     },
-    transparent: {
-        backgroundColor: '#00000000'
-    },
+    
     textAccount: {
         color: '#0000007f',
         marginRight: 4
@@ -189,15 +189,6 @@ const styles = StyleSheet.create({
     },
     loginForm: {
     },
-    forgotPassword: {
-        height: 48,
-        opacity: 0.5,
-        fontSize: 12,
-        lineHeight: 48.0,
-        letterSpacing: 0.33,
-        textAlign: "right",
-        color: '$black'
-    },
     loginButton: {
         height: 48,
         backgroundColor: '$dark_sky_blue',
@@ -209,7 +200,16 @@ const styles = StyleSheet.create({
         backgroundColor: '$dark_sky_blue_trans',
         alignItems: 'center',
         justifyContent: 'center'
+    },forgotPassword: {
+        height: 48,
+        opacity: 0.5,
+        fontSize: 12,
+        lineHeight: 48.0,
+        letterSpacing: 0.33,
+        textAlign: "right",
+        color: '$black'
     },
+    
     loginText: {
         fontSize: 16,
         fontWeight: "500",
